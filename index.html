@@ -21,23 +21,23 @@
                 <div class="col-lg-6 col-md-12 p-5">
                     <div class="mb-4">
                         <h1>Customize your Blue 24-inch iMac with Apple M1 chip.</h1>
-                        <p class="text-black-50">Apple M1 chip with 8‑core CPU, 8‑core GPU, and 16‑core Neural Engine 8GB unified memory 512GB SSD storage Retina display with True Tone Backlit Magic Keyboard - US English Touch ID Force Touch trackpad Two Thunderbolt USB 4 ports</p>
+                        <p class="text-black-50">Apple M1 chip with 8core CPU, 8core GPU, and 16core Neural Engine 8GB unified memory 512GB SSD storage Retina display with True Tone Backlit Magic Keyboard - US English Touch ID Force Touch trackpad Two Thunderbolt USB 4 ports</p>
                     </div>
                     <div class="mb-4">
                         <h6>Memory</h6>
-                        <button class="btn btn-outline-dark">8GB unified memory</button>
-                        <button class="btn btn-outline-dark">16GB unified memory</button>
+                        <button class="btn btn-outline-dark mb-2" id="memory_option-1">8GB unified memory</button>
+                        <button class="btn btn-outline-dark mb-2" id="memory_option-2">16GB unified memory</button>
                     </div>
                     <div class="mb-4">
                         <h6>Storage</h6>
-                        <button class="btn btn-outline-dark mb-2">256GB SSD storage</button>
-                        <button class="btn btn-outline-dark mb-2">512GB SSD storage</button>
-                        <button class="btn btn-outline-dark">1TB SSD storage</button>
+                        <button class="btn btn-outline-dark mb-2" id="storage_option-1">256GB SSD storage</button>
+                        <button class="btn btn-outline-dark mb-2" id="storage_option-2">512GB SSD storage</button>
+                        <button class="btn btn-outline-dark mb-2" id="storage_option-3">1TB SSD storage</button>
                     </div>
                     <div class="mb-4">
                         <h6>Choose your delivery option</h6>
-                        <button class="btn btn-outline-dark mb-2">Friday! August 25 Free delivery</button>
-                        <button class="btn btn-outline-dark">Friday, Aug 21 Delivery charge $20!</button>
+                        <button class="btn btn-outline-dark mb-2" id="delivery_option-1">Friday! August 25 Free delivery</button>
+                        <button class="btn btn-outline-dark mb-2" id="delivery_option-2">Friday, Aug 21 Delivery charge $20!</button>
                     </div>
 
                     <!-- Price Table -->
@@ -45,40 +45,41 @@
                         <tbody>
                           <tr>
                             <th scope="row">Best Price</th>
-                            <td>$1299</td>
+                            <td>$ <span id="best_price">1299</span></td>
                           </tr>
                           <tr>
                             <th scope="row">Extra memory cost</th>
-                            <td>$0</td>
+                            <td>$ <span id="memory_cost">0</span></td>
                           </tr>
                           <tr>
                             <th scope="row">Extra storage cost</th>
-                            <td>$0</td>
+                            <td>$ <span id="storage_cost">0</span></td>
                           </tr>
                           <tr>
                             <th scope="row">Delivery Charge</th>
-                            <td>$0</td>
+                            <td>$ <span id="delivery_cost">0</span></td>
                           </tr>
                           <hr>
                           <tfoot>
                             <th scope="row">Total Price</th>
-                            <td>$1299</td>
+                            <td>$ <span id="total">1299</span></td>
                           </tfoot>
                         </tbody>
                     </table>
 
                     <!-- Promo Code -->
                     <h5>Add Promo Code and get upto 20% <span class="text-success fs-3">Discount!</span></h5>
+                    <span id="promo">Promo code: Student</span>
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Enter promo code here" aria-describedby="button-addon2">
-                        <button class="btn btn-outline-success" type="button" id="button-addon2">Apply</button>
+                        <input type="text" id="promo_field" class="form-control" placeholder="Enter promo code here" >
+                        <button class="btn btn-outline-success" type="button" id="promo_btn">Apply</button>
                     </div>
                 </div>
             </div>
             <hr>
 
             <!-- Total -->
-            <div class="text-center fs-2 fw-bold mb-5">Total: $1299</div>
+            <div class="text-center fs-2 fw-bold mb-5" >Total: $ <span id="final_total">1299</span></div>
         </div>
     </section>
     
